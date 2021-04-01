@@ -11,10 +11,10 @@ console.log(" vamos começar?");
 
 
 
-const seu_nome = "Diego";
-const seu_idade = 90;
-const sua_temperatura = 35;
-const está_tossindo = true;
+const seu_nome = "diego";
+const seu_idade = 27;
+const sua_temperatura = 39;
+const está_tossindo = false;
 const está_vacinado = true;
 const tem_usado_álcool_em_gel= true;
 const está_usando_mascara = true;
@@ -110,7 +110,7 @@ else if (está_usando_mascara == true && tem_usado_álcool_em_gel == true && sua
 }
 else {console.log(" !!!!ACESSO NEGADO 1!!!!\n \n " + seu_nome + " você não se enquadra nos requisitos necessários \n \n")
      processo1=false;
-     acesso1= true
+     acesso1= true;
      
  }
 
@@ -121,7 +121,7 @@ if(está_tossindo == false && está_vacinado == true && processo1 == true){
     console.log(" segundo processo: esta OK!!! \n \n") 
     processo2=true;
 }
-else if (está_usando_mascara == true && tem_usado_álcool_em_gel == true &&  está_vacinado == true ){
+else if (está_usando_mascara == true && tem_usado_álcool_em_gel == true &&  está_vacinado == true  && processo1 == true){
         console.log(" segundo processo: esta OK !!! \n \n")
         processo2=true;
 }
